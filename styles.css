@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Off-white: hsl(0, 0%, 94%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+}
+
+
+/* --------------------------
+        MAIN BODY 
+-------------------------- */
+
+body {
+    background: var(--Light-grey);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+input, 
+label {
+    display: inline-block;
+}
+
+input {
+    border-radius: .5rem;
+    border: 1px solid var(--Off-white);
+    height: 3.5rem;
+    text-indent: 10%;
+    font-size: 2rem;
+    max-width: 10rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label {
+    text-transform: uppercase;
+    color: var(--Smokey-grey);
+    font-size: 0.8rem;
+    margin-bottom: .5rem;
+}
+
+hr {
+    margin: 3rem 0;
+    color: var(--Off-white);
+    width: 90%;
+}
+
+button {
+    position: absolute;
+    background: var(--Purple);
+    border-radius: 50%;
+    border: none;
+    padding: .5rem;
+    font-size: 3rem;
+    color: var(--Off-white);
+    rotate: 180deg;
+    right: 2.5rem;
+    top: 10.5rem;
+}
+
+button:hover {
+    background: hsl(0, 0%, 0%);
+}
+
+button:active {
+    background: hsl(259, 55%, 40%);
+}
+
+span {
+    color: var(--Purple);
+}
+
+p {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5rem;
+    color: var(--Off-black);
+}
+
+small{
+    font-style: italic;
+    color: var(--Light-red);
+    visibility: hidden;
+    /* position: absolute; */
+}
+
+/* ----------
+    Errors
+---------- */
+
+.date.error input {
+    border: 1px solid var(--Light-red);
+}
+.date.error label {
+    color: var(--Light-red);
+}
+
+.date.error small {
+    visibility: visible;
+}
+
+
+.date.success small {
+    visibility: hidden;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 50rem;
+    position: relative;
+    margin: 3rem auto;
+    background: var(--White);
+    border-radius: 1rem 1rem 10rem 1rem;
+    padding: 3rem;
+}
+
+.birthday {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 35rem;
+}
+
+
+::placeholder {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+        END OF DOCUMENT 
+-------------------------- */
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
